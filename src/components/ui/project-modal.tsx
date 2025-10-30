@@ -3,8 +3,6 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
-import { X } from 'lucide-react'
 import { Project } from '@/data/projects'
 
 interface ProjectModalProps {
@@ -28,12 +26,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
               transition={{ duration: 0.2 }}
             >
               <DialogHeader>
-                <div className="flex items-center justify-between">
-                  <DialogTitle className="text-2xl">{project.title}</DialogTitle>
-                  <Button variant="ghost" size="icon" onClick={onClose}>
-                    <X className="h-4 w-4" />
-                  </Button>
-                </div>
+                <DialogTitle className="text-2xl">{project.title}</DialogTitle>
               </DialogHeader>
 
               <div className="space-y-6">
