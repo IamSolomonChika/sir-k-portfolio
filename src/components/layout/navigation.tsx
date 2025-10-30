@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from '@/components/ui/button'
+import { ThemeToggle } from '@/components/ui/theme-toggle'
 import { Menu, X } from 'lucide-react'
 
 const navItems = [
@@ -78,15 +79,25 @@ export function Navigation() {
                 {item.label}
               </motion.button>
             ))}
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: navItems.length * 0.1 }}
+            >
+              <ThemeToggle />
+            </motion.div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
+          {/* Mobile Actions */}
+          <div className="flex items-center space-x-2 md:hidden">
+            <ThemeToggle />
+            {/* Mobile Menu Button */}
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
             <AnimatePresence mode="wait">
               {mobileMenuOpen ? (
                 <motion.div
@@ -109,6 +120,7 @@ export function Navigation() {
               )}
             </AnimatePresence>
           </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
