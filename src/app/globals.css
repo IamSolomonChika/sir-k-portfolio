@@ -138,11 +138,11 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(var(--muted));
+  background: hsl(var(--muted) / 0.3);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--primary));
+  background: hsl(var(--primary) / 0.6);
   border-radius: 4px;
 }
 

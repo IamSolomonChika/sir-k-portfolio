@@ -1,8 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
 import { SectionContainer } from '@/components/ui/section-container'
 import { AnimatedText } from '@/components/ui/animated-text'
 import { SkillCard } from '@/components/ui/skill-card'
@@ -26,7 +24,7 @@ export function AboutSkillsSection() {
           />
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-muted-foreground mb-4">
-              I'm a results-driven Product Manager with X years of experience building products that
+              I&apos;m a results-driven Product Manager with X years of experience building products that
               users love and businesses need. I excel at translating complex user needs into clear,
               actionable product requirements.
             </p>

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { X, ExternalLink } from 'lucide-react'
+import { X } from 'lucide-react'
 import { Project } from '@/data/projects'
 
 interface ProjectModalProps {

@@ -90,8 +90,8 @@ export function ContactSection() {
             className="text-3xl md:text-4xl font-bold mb-6"
           />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            I'm always interested in hearing about new opportunities and collaborations.
-            Feel free to reach out if you'd like to connect!
+            I&apos;m always interested in hearing about new opportunities and collaborations.
+            Feel free to reach out if you&apos;d like to connect!
           </p>
         </motion.div>
 
@@ -105,10 +105,10 @@ export function ContactSection() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
+              <h3 className="text-2xl font-semibold mb-6">Let&apos;s Connect</h3>
               <p className="text-muted-foreground mb-8">
                 Whether you have a project in mind, want to discuss potential opportunities,
-                or just want to chat about product management, I'd love to hear from you.
+                or just want to chat about product management, I&apos;d love to hear from you.
               </p>
             </div>
 
@@ -186,7 +186,7 @@ export function ContactSection() {
               <CardHeader>
                 <CardTitle>Send a Message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and I'll get back to you as soon as possible.
+                  Fill out the form below and I&apos;ll get back to you as soon as possible.
                 </CardDescription>
               </CardHeader>
               <CardContent>

@@ -64,7 +64,7 @@ export function ProjectsSection() {
             className="text-3xl md:text-4xl font-bold mb-6"
           />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A selection of products I've managed from concept to launch,
+            A selection of products I&apos;ve managed from concept to launch,
             delivering measurable business impact and user value.
           </p>
         </motion.div>
@@ -77,7 +77,7 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {featuredProjects.map((project, index) => (
+          {featuredProjects.map((project) => (
             <motion.div
               key={project.id}
               variants={cardVariants}

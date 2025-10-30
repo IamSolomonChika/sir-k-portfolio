@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge'
 import { SectionContainer } from '@/components/ui/section-container'
 import { AnimatedText } from '@/components/ui/animated-text'
 import { experienceData } from '@/data/experience'
-import { MapPin, Calendar, Briefcase } from 'lucide-react'
+import { MapPin, Briefcase } from 'lucide-react'
 
 export function ExperienceSection() {
   const timelineVariants = {
